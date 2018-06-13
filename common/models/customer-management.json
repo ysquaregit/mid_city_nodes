@@ -9,15 +9,15 @@
   "properties": {
     "id": {
       "type": "number",
-      "id": true,
-      "generated": false,
       "required": true
     },
     "business_name": {
       "type": "string",
+      "id": true,
+      "generated": false,
       "required": true
     },
-    "business_address": {
+    "b_street": {
       "type": "string",
       "required": true
     },
@@ -33,7 +33,7 @@
       "type": "string",
       "required": true
     },
-    "physical_address": {
+    "p_street": {
       "type": "string",
       "required": true
     },
