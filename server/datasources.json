@@ -12,5 +12,24 @@
     "name": "mysqlDs",
     "user": "root",
     "connector": "mysql"
- }
+  },
+  "myEmailDataSource": {
+    "name": "myEmailDataSource",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "ahameedijaz78@gmail.com",
+          "pass": "ahmdijaz+00"
+        }
+      }
+    ],
+    "connector": "mail"
+  }
 }

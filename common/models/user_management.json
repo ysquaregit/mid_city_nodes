@@ -1,42 +1,37 @@
 {
   "name": "user_management",
   "plural": "user_managements",
-  "base": "PersistedModel",
+  "base": "User",
   "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "number",
-      "required": true
-    },
-    "email": {
-      "type": "string",
-      "id": true,
-      "generated": false,
-      "required": true
-    },
     "first_name": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "last_name": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "role": {
       "type": "string",
       "required": true
     },
     "permissions": {
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   },
+  "emailVerificationRequired": true,
   "validations": [],
   "relations": {},
-  "acls": [],
+  "acls": [
+    {
+     "principalType": "ROLE",
+     "principalId": "$everyone",
+     "accessType": "READ",
+     "permission": "ALLOW"
+   }
+  ],
   "methods": {
 
 }
