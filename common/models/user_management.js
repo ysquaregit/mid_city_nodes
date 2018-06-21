@@ -12,7 +12,7 @@ module.exports = function(Usermanagement) {
    var options = {
      type: 'email',
      to: user.email,
-     from: 'ahameedijaz78@gmail.com',
+     from: 'testmidcities@gmail.com',
      subject: 'Thanks for registering.',
      template: path.resolve(__dirname, '../../server/views/verify.ejs'),
      redirect: '/verified',
